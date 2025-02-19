@@ -13,6 +13,42 @@ body {
   justify-content: center;
 }
 
+body .inputField {
+  text-align: center;
+  padding: 0.8rem 5rem;
+  background-color: green;
+  border: 5px solid gold;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .inputField label {
+  color: gold;
+  font-size: 1.8em;
+}
+
+body .inputField input {
+  height: 2rem;
+  width: 100%;
+  margin: 1rem;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(255, 1, 1);
+  border: 3px solid gold;
+  color: gold;
+}
+
+body .inputField button {
+  background-color: rgb(255, 1, 1);
+  color: gold;
+  font-size: 1.2em;
+  width: 6rem;
+  padding: 0.3rem 0;
+  border: 3px solid gold;
+}
+
 body .container {
   background-color: green;
   padding: 2rem 5rem;
@@ -35,7 +71,7 @@ body .container p {
   margin-bottom: 1rem;
 }
 
-body label {
+body .listLabel label {
   font-size: 5em;
   border: 3px solid goldenrod;
   background-color: gold;
@@ -54,12 +90,12 @@ body .btn {
   justify-content: center;
 }
 
-body button {
-  font-size: 1em;
+body .container button {
+  font-size: 1.2em;
   background-color: red;
   padding: 0.5rem 1.5rem;
   border: 3px solid gold;
-  color: whitesmoke;
+  color: gold;
   cursor: pointer;
 }
 

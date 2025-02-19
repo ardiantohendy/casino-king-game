@@ -16,14 +16,44 @@ const myLabel3 = document.getElementById("myLabel3");
 const rollBtn = document.getElementById("rollBtn");
 const anouncement = document.getElementById("alert");
 const winNum = document.getElementById("winNum");
+const btnPlay = document.getElementById("btnPlay");
+const inputField = document.getElementById("inputField");
+const userTurn = document.getElementById("num1");
+const turnNumber = document.getElementById("num2");
 
 let winNumber = 0;
+let numOfTurn;
+let turn = 0;
+let num;
+let much = 0;
 
 let randomNum1;
 let randomNum2;
 let randomNum3;
 
+rollBtn.style.zIndex = -100;
+
+btnPlay.onclick = function () {
+  numOfTurn = inputField.value;
+  num = Number(numOfTurn);
+  if (typeof num == "number" && num !== 0) {
+    turnNumber.textContent = num;
+    rollBtn.style.zIndex = 0;
+  } else {
+    alert("Please input a number!");
+    console.log(num, typeof num);
+  }
+};
+
 rollBtn.onclick = function () {
+  much++;
+  muchPlush = userTurn.textContent = much;
+  if (num === much) {
+    rollBtn.style.zIndex = -100;
+    turnNumber.textContent = 0;
+    userTurn.textContent = 0;
+    much = 0;
+  }
   randomNum1 = Math.floor(Math.random() * 6) + 1;
   randomNum2 = Math.floor(Math.random() * 6) + 1;
   randomNum3 = Math.floor(Math.random() * 6) + 1;
