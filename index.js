@@ -10,11 +10,14 @@
 //   console.log(username);
 // };
 
-const myLabel1 = document.getElementById(`myLabel1`);
-const myLabel2 = document.getElementById(`myLabel2`);
-const myLabel3 = document.getElementById(`myLabel3`);
+const myLabel1 = document.getElementById("myLabel1");
+const myLabel2 = document.getElementById("myLabel2");
+const myLabel3 = document.getElementById("myLabel3");
 const rollBtn = document.getElementById("rollBtn");
 const anouncement = document.getElementById("alert");
+const winNum = document.getElementById("winNum");
+
+let winNumber = 0;
 
 let randomNum1;
 let randomNum2;
@@ -31,5 +34,9 @@ rollBtn.onclick = function () {
 
   if (randomNum1 === randomNum2 && randomNum2 === randomNum3) {
     anouncement.style.opacity = 100;
+    winNumber++;
+    winNum.textContent = winNumber;
+  } else {
+    anouncement.style.opacity = 0;
   }
 };

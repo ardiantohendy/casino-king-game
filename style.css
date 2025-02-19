@@ -62,3 +62,39 @@ body button {
   color: whitesmoke;
   cursor: pointer;
 }
+
+body .status {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.5rem 0;
+  background-color: green;
+  width: 20rem;
+  height: 5rem;
+  border: 5px solid gold;
+  color: gold;
+  font-size: 1.5em;
+}
+
+body .status .turn {
+  display: flex;
+  align-items: center;
+}
+
+body .status .listTurn {
+  display: flex;
+  background-color: white;
+  padding: 0.2rem 0.5rem;
+  margin: 0.2rem;
+}
+
+body .status .prize {
+  display: flex;
+  align-items: center;
+}
+
+body .status .prize p.winNum {
+  background-color: white;
+  padding: 0.2rem 0.5rem;
+  margin: 0.2rem;
+}
